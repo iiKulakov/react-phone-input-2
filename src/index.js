@@ -960,14 +960,13 @@ class PhoneInput extends React.Component {
         onKeyDown={this.handleKeydown}>
         {specialLabel && <div className='special-label'>{specialLabel}</div>}
         {errorMessage && <div className='invalid-number-message'>{errorMessage}</div>}
-        <div>hello</div>
         <input
           className={inputClasses}
           style={this.props.inputStyle}
           onChange={this.handleInput}
-          onClick={() => console.log(111111)}
+          // onclick={() => console.log(111111)}
           // onClick={this.props.onClick}
-          onDoubleClick={this.handleDoubleClick}
+          // onDoubleClick={this.handleDoubleClick}
           onFocus={this.handleInputFocus}
           onBlur={this.handleInputBlur}
           onCopy={this.handleInputCopy}
