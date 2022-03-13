@@ -604,7 +604,9 @@ class PhoneInput extends React.Component {
 
   handleInputClick = (e) => {
     this.setState({ showDropdown: false });
-    if (this.props.onClick) this.props.onClick(e, this.getCountryData());
+    console.log(11111)
+    return onClick(e)
+    // if (this.props.onClick) this.props.onClick(e, this.getCountryData());
   }
 
   handleDoubleClick = (e) => {
@@ -962,7 +964,8 @@ class PhoneInput extends React.Component {
           className={inputClasses}
           style={this.props.inputStyle}
           onChange={this.handleInput}
-          onClick={this.props.onClick}
+          onClick={() => console.log(111111)}
+          // onClick={this.props.onClick}
           onDoubleClick={this.handleDoubleClick}
           onFocus={this.handleInputFocus}
           onBlur={this.handleInputBlur}
