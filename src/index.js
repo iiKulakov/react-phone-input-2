@@ -176,6 +176,7 @@ class PhoneInput extends React.Component {
   }
 
   constructor(props) {
+    const { onClick } = props;
     super(props);
     const { onlyCountries, preferredCountries, hiddenAreaCodes } = new CountryData(
       props.enableAreaCodes, props.enableTerritories, props.regions,
@@ -957,6 +958,7 @@ class PhoneInput extends React.Component {
       <div
         className={`${containerClasses} ${this.props.className}`}
         style={this.props.style || this.props.containerStyle}
+        onClick={onClick}
         onKeyDown={this.handleKeydown}>
         {specialLabel && <div className='special-label'>{specialLabel}</div>}
         {errorMessage && <div className='invalid-number-message'>{errorMessage}</div>}
