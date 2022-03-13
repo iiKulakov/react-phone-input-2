@@ -176,7 +176,9 @@ class PhoneInput extends React.Component {
   }
 
   constructor(props) {
+    console.log("🚀 ~ file: index.js ~ line 179 ~ PhoneInput ~ constructor ~ props", props)
     const { onClick } = props;
+    console.log("🚀 ~ file: index.js ~ line 180 ~ PhoneInput ~ constructor ~ onClick", onClick)
     super(props);
     const { onlyCountries, preferredCountries, hiddenAreaCodes } = new CountryData(
       props.enableAreaCodes, props.enableTerritories, props.regions,
